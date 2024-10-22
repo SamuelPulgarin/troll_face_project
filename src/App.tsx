@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { DailyRegisterPage } from './pages/DailyRegisterPage'
+import { LoginPage } from './pages/LoginPage'
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<DailyRegisterPage />} />
+          <Route path='/' element={<LoginPage />} />
+          <Route path='/daily/register' element={<DailyRegisterPage />} />
         </Routes>
       </Router>
     </>
