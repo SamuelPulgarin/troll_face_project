@@ -11,17 +11,18 @@ export const LoginForm = () => {
     return (
         <>
             <div className="flex items-center justify-center h-screen w-screen">
-                <Card className="w-[350px]">
+                <Card className="w-[350px] backdrop-blur-lg border-none shadow-lg max-w-md bg-transparent">
                     <CardHeader>
                         <CardTitle>Sign in</CardTitle>
-                        <CardDescription>Enter your credentials to access</CardDescription>
+                        <CardDescription className="text-white">Enter your credentials to access</CardDescription>
                     </CardHeader>
-                    <form onSubmit={() => { navigate('/daily/register') }}>
+                    <form onSubmit={() => { navigate('/home') }}>
                         <CardContent>
                             <div className="grid w-full items-center gap-4">
                                 <div className="flex flex-col space-y-1.5">
                                     <Label htmlFor="email">Email</Label>
                                     <Input
+                                        className="focus:outline-white focus:border-none placeholder:text-white"
                                         id="email"
                                         type="email"
                                         placeholder="name@example.com"
@@ -31,6 +32,7 @@ export const LoginForm = () => {
                                 <div className="flex flex-col space-y-1.5">
                                     <Label htmlFor="password">Password</Label>
                                     <Input
+                                        className="focus:outline-white focus:border-none placeholder:text-white"
                                         id="password"
                                         type="password"
                                         placeholder="Password"
