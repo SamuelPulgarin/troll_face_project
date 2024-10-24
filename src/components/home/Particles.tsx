@@ -1,7 +1,6 @@
 import useMousePosition from '@/hooks/home/useMousePosition'
 import { useRef, useEffect } from 'react'
 
-
 interface ParticlesProps {
   className?: string
   quantity?: number

@@ -20,7 +20,7 @@ const panelOptions = [
         title: 'Rangos',
         description: 'Consulta tu rango actual',
         action: 'Ver rangos',
-        href: '/home',
+        href: '/ranks',
         icon: <Trophy />
     },
     {
@@ -36,7 +36,7 @@ const panelOptions = [
         title: 'Reglas',
         description: 'Conoce las reglas del reto',
         action: 'Ver reglas',
-        href: '/home',
+        href: '/rules',
         icon: <Scroll />
     },
     {
@@ -52,7 +52,7 @@ const panelOptions = [
 export const WelcomeScreen = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-black via-stone-900 to-zinc-950 p-8">
-            <div className="font-extrabold text-3xl text-center md:text-4xl mb-8 [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-50% to-pink-500">¡Transforma tu <span className="text-blue-400 hover:text-pink-500 transition ease-in duration-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
+            <div className="font-extrabold text-3xl text-center md:text-4xl my-12 [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-50% to-pink-500">¡Transforma tu <span className="text-blue-400 hover:text-pink-500 transition ease-in duration-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                 <ul className="block animate-text-slide-6 text-left leading-tight [&_li]:block">
                     <li>Mente!</li>
                     <li>Fisico!</li>
