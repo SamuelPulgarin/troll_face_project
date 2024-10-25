@@ -1,5 +1,6 @@
 import { Rules } from '@/components/rules/Rules';
 import { NavBar } from '../components/common/NavBar';
+import { Footer } from '@/components/common/Footer';
 
 
 export const GuieAndRulesPage = () => {
@@ -7,6 +8,7 @@ export const GuieAndRulesPage = () => {
     <>
         <NavBar />
         <Rules />
+        <Footer />
     </>
   )
 }

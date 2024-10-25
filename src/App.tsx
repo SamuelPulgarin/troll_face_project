@@ -4,6 +4,9 @@ import { LoginPage } from './pages/LoginPage'
 import { HomePage } from './pages/HomePage'
 import { RanksPage } from './pages/RanksPage';
 import { GuieAndRulesPage } from './pages/GuieAndRulesPage';
+import { ProfilePage } from './pages/ProfilePage';
+import { ProgressBarPage } from './pages/ProgressBarPage';
+import { LeaderPage } from './pages/LeaderPage';
 
 function App() {
 
@@ -15,7 +18,10 @@ function App() {
           <Route path='/home' element={<HomePage />} />
           <Route path='/daily/register' element={<DailyRegisterPage />} />
           <Route path='/ranks' element={<RanksPage />} />
+          <Route path='/user/profile' element={<ProfilePage />} />
           <Route path='/rules' element={<GuieAndRulesPage />} />
+          <Route path='/progress' element={<ProgressBarPage />} />
+          <Route path='/top/leader' element={<LeaderPage />} />
         </Routes>
       </Router>
     </>

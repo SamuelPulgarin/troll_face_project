@@ -25,7 +25,7 @@ export const Rules = () => {
     return (
         <>
             <div className="min-h-screen bg-gradient-to-b from-black via-stone-900 to-zinc-950 text-stone-100 p-8">
-                <Card className="w-full max-w-4xl mx-auto bg-gradient-to-b from-black via-stone-900 to-zinc-950 border-stone-700">
+                <Card className="w-full max-w-4xl mx-auto mt-10 bg-gradient-to-b from-black via-stone-900 to-zinc-950 border-stone-700">
                     <CardHeader>
                         <CardTitle className="text-3xl font-bold text-stone-100">Winter Arc</CardTitle>
                         <CardDescription className="text-stone-400">

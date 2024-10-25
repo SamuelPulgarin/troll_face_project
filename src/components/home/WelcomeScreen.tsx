@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Calendar, Trophy, User, Scroll, BarChart } from "lucide-react"
+import { Calendar, Trophy, User, Scroll, BarChart, Medal } from "lucide-react"
 import Spotlight, { SpotlightCard } from "./Spotlight"
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { IoLogoWhatsapp } from "react-icons/io5";
@@ -19,7 +19,7 @@ const panelOptions = [
         id: '2',
         title: 'Rangos',
         description: 'Consulta tu rango actual',
-        action: 'Ver rangos',
+        action: 'Rangos',
         href: '/ranks',
         icon: <Trophy />
     },
@@ -28,14 +28,14 @@ const panelOptions = [
         title: 'Perfil',
         description: 'Actualiza tu información',
         action: 'Mi perfil',
-        href: '/home',
+        href: '/user/profile',
         icon: <User />
     },
     {
         id: '4',
         title: 'Reglas',
         description: 'Conoce las reglas del reto',
-        action: 'Ver reglas',
+        action: 'Reglas',
         href: '/rules',
         icon: <Scroll />
     },
@@ -43,9 +43,17 @@ const panelOptions = [
         id: '5',
         title: 'Progreso',
         description: 'Revisa tu avance en el reto',
-        action: 'Ver progreso',
-        href: '/home',
+        action: 'Progreso',
+        href: '/progress',
         icon: <BarChart />
+    },
+    {
+        id: '6',
+        title: 'Ranking',
+        description: 'Observa a los mejores guerreros',
+        action: 'Top',
+        href: '/top/leader',
+        icon: <Medal />
     }
 ];
 

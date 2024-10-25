@@ -6,9 +6,10 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const navItems = [
-    { title: "Home", href: "/" },
+    { title: "Inicio", href: "/home" },
     { title: "About", href: "/about" },
     { title: "Services", href: "/services" },
     { title: "Contact", href: "/contact" },
@@ -34,7 +35,7 @@ export const NavBar = () => {
                                     asChild
                                     className="text-white hover:bg-white/50"
                                 >
-                                    <a href={item.href}>{item.title}</a>
+                                    <Link to={`${item.href}`}>{item.title}</Link>
                                 </Button>
                             ))}
                         </div>
@@ -57,7 +58,7 @@ export const NavBar = () => {
                                             className="justify-start text-white hover:bg-white/10"
                                             onClick={() => setIsOpen(false)}
                                         >
-                                            <a href={item.href}>{item.title}</a>
+                                            <Link to={`${item.href}`}>{item.title}</Link>
                                         </Button>
                                     ))}
                                 </nav>
