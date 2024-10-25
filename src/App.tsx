@@ -7,6 +7,7 @@ import { GuieAndRulesPage } from './pages/GuieAndRulesPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { ProgressBarPage } from './pages/ProgressBarPage';
 import { LeaderPage } from './pages/LeaderPage';
+import { AboutDeveloperPage } from './pages/AboutDeveloperPage';
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path='/about' element={<AboutDeveloperPage />} />
+
           <Route path='/' element={<LoginPage />} />
           <Route path='/home' element={<HomePage />} />
           <Route path='/daily/register' element={<DailyRegisterPage />} />
