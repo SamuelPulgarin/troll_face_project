@@ -10,9 +10,9 @@ import { Link } from "react-router-dom"
 
 const navItems = [
     { title: "Inicio", href: "/home" },
+    // { title: "Logros", href: "/badges" },
     { title: "Acerca de", href: "/about/developer" },
     { title: "Sobre nosotros", href: "/about" },
-    { title: "Contact", href: "/contact" },
 ]
 
 export const NavBar = () => {

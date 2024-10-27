@@ -10,6 +10,7 @@ import { LeaderPage } from './pages/LeaderPage';
 import { AboutDeveloperPage } from './pages/AboutDeveloperPage';
 import { MessageInbox } from './pages/MessageInbox';
 import { AboutAdminPage } from './pages/AboutAdminPage';
+import { BadgesPage } from './pages/BadgesPage';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/progress' element={<ProgressBarPage />} />
           <Route path='/top/leader' element={<LeaderPage />} />
           <Route path='/message' element={<MessageInbox />} />
+          <Route path='/badges' element={<BadgesPage />} />
         </Routes>
       </Router>
     </>
