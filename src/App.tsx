@@ -8,6 +8,8 @@ import { ProfilePage } from './pages/ProfilePage';
 import { ProgressBarPage } from './pages/ProgressBarPage';
 import { LeaderPage } from './pages/LeaderPage';
 import { AboutDeveloperPage } from './pages/AboutDeveloperPage';
+import { MessageInbox } from './pages/MessageInbox';
+import { AboutAdminPage } from './pages/AboutAdminPage';
 
 function App() {
 
@@ -15,7 +17,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/about' element={<AboutDeveloperPage />} />
+          <Route path='/about/developer' element={<AboutDeveloperPage />} />
+          <Route path='/about' element={<AboutAdminPage />} />
 
           <Route path='/' element={<LoginPage />} />
           <Route path='/home' element={<HomePage />} />
@@ -25,6 +28,7 @@ function App() {
           <Route path='/rules' element={<GuieAndRulesPage />} />
           <Route path='/progress' element={<ProgressBarPage />} />
           <Route path='/top/leader' element={<LeaderPage />} />
+          <Route path='/message' element={<MessageInbox />} />
         </Routes>
       </Router>
     </>

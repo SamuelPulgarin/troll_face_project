@@ -5,6 +5,7 @@ import Spotlight, { SpotlightCard } from "./Spotlight"
 import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { MailBoxButton } from './MailBoxButton';
 
 const panelOptions = [
     {
@@ -93,17 +94,9 @@ export const WelcomeScreen = () => {
                 }
             </Spotlight>
 
-            {/* Botones flotantes para redes sociales */}
-            <div className="fixed bottom-8 right-8 flex flex-col gap-4">
-                <Button size="icon" className="rounded-full bg-white hover:bg-gray-100">
-                    <TiSocialFacebook className="text-black" />
-                </Button>
-                <Button size="icon" className="rounded-full bg-white hover:bg-gray-100">
-                    <TiSocialInstagram className="text-black" />
-                </Button>
-                <Button size="icon" className="rounded-full bg-white hover:bg-gray-100">
-                    <IoLogoWhatsapp className="text-black" />
-                </Button>
+            {/* Botón de buzón flotante */}
+            <div className="fixed bottom-8 right-8">
+                <MailBoxButton />
             </div>
         </div>
     )

@@ -7,6 +7,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			backgroundSize: {
+				'400%': '400%',
+			},
 			animation: {
 				'text-slide-2': 'text-slide-2 5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
 				'text-slide-3': 'text-slide-3 7.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
@@ -22,6 +25,7 @@ export default {
 				'animatetop': 'animatetop 0.4s',
 				'zoomIn': 'zoomIn 0.5s',
 				'animate': 'animate 25s linear infinite',
+				'background-animate': 'background-gradient-animation 20s ease infinite',
 			},
 			keyframes: {
 				'text-slide-2': {
@@ -205,6 +209,10 @@ export default {
 						opacity: '0',
 						borderRadius: '50%'
 					},
+				},
+				'background-gradient-animation': {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
 				},
 			},
 			borderRadius: {
