@@ -2,8 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Calendar, Trophy, User, Scroll, BarChart, Medal } from "lucide-react"
 import Spotlight, { SpotlightCard } from "./Spotlight"
-import { TiSocialFacebook, TiSocialInstagram } from "react-icons/ti";
-import { IoLogoWhatsapp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { MailBoxButton } from './MailBoxButton';
 
